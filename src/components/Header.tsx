@@ -5,10 +5,9 @@ export const Header = () => {
     <div className="max-w-[1460px] m-auto px-4">
       <div className="w-full flex items-center justify-between gap-4 py-4">
         <a href="#"><img className="max-w-[180px] block" src="images/logo.png" alt="logo" /></a>
-        <span className="hidden cursor-pointer"><RiMenuFold3Line/></span>
         <nav className="flex gap-4 items-center">
-          <span className="flex gap-8 items-center">
-            <a href="" className="font-semibold text-[16px] text-gray-500 hover:text-black transition">Home</a>
+          <span className="flex gap-4 xl:gap-8 items-center">
+            <a href="" className="hidden xl:block font-semibold text-[16px] text-gray-500 hover:text-black transition">Home</a>
             <a href="" className="font-semibold text-[16px] text-gray-500 hover:text-black transition">About Us</a>
             <a href="" className="font-semibold text-[16px] text-gray-500 hover:text-black transition">Services</a>
             <a href="" className="font-semibold text-[16px] text-gray-500 hover:text-black transition">Products</a>
@@ -20,6 +19,7 @@ export const Header = () => {
             <button className="gradient text-[16px] rounded-full text-white transition py-1 px-4 whitespace-nowrap">Tekmarts CAREERS</button>
           </span>
         </nav>
+        <span className="hidden cursor-pointer"><RiMenuFold3Line className="w-5 h-5"/></span>
       </div>
     </div>
   </div>;

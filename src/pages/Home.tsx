@@ -4,7 +4,7 @@ export const Home = () => {
   return (
     <div className="w-full">
       <section className="w-full relative overflow-hidden h-[1000px]">
-        <video className="grayscale opacity-70 h-full object-cover" src="videodummy.mp4" loop autoPlay muted></video>
+        <video className="grayscale opacity-70 w-full h-full object-cover" src="videodummy.mp4" loop autoPlay muted></video>
         <section className="absolute w-full h-full bg-white/90 top-0 left-0 z-10"></section>
         <section className="absolute z-10 top-0 w-full h-full pb-20">
           <div className="max-w-[1460px] m-auto px-4 h-full flex items-center justify-between gap-4">
