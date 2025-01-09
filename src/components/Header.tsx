@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { RiMenuFold3Line } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -67,12 +68,12 @@ export const Header = () => {
               >
                 Software Solutions
               </a>
-              <a
-                href=""
+              <Link
                 className="font-semibold text-[16px] text-gray-500 hover:text-black transition"
+                to={"/contact-us"}
               >
                 Contact Us
-              </a>
+              </Link>
             </span>
             <span className="flex items-center gap-4">
               <div className="font-regular text-gray-500">|</div>
