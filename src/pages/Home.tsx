@@ -12,7 +12,7 @@ export const Home = () => {
               <h1 className="font-black text-[30px] lg:text-[50px] xl:text-[60px] sm:flex gap-2 uppercase leading-none whitespace-nowrap">Welcome to <p className="font-light  text-[30px] lg:text-[50px] xl:text-[60px]">Tekmarts</p></h1>
               <span className="mt-2 sm:mt-0 text-[20px] sm:text-[30px] xl:text-[40px] text-[#666]">MORE THAN JUST SELLING ONLINE!</span>
               <p className="text-[#777] text-[16px] sm:text-[25px] xl:text-[30px] my-4">Your one-stop solution for innovative e-commerce and retail success.</p>
-              <button className="text-[16px] sm:text-[20px] flex items-center gap-4 bg-[#fce765] hover:bg-[#ffe64a] transition p-3 px-4 rounded-full font-semibold">Get Started to Know More <FaArrowRight /></button>
+              <button className="text-[16px] sm:text-[20px] flex items-center gap-4 bg-[#fce765] hover:bg-[#ffe64a] transition p-3 px-4 rounded-full font-semibold cursor-default">Get Started to Know More <FaArrowRight /></button>
             </div>
             <img className="mt-20 md:mt-0 w-[50%] sm:w-[30%] move relative" src="images/phone.png" alt="phone"/>
           </div>
@@ -36,10 +36,9 @@ export const Home = () => {
         <div className="max-w-[1460px] m-auto px-4">
         <section className="flex flex-col lg:flex-row gap-12 sm:gap-8 justify-between items-center">
           <section >
-            <h2 className="text-black text-[30px] md:text-[40px] font-bold">About Tekmarts</h2>
-            <p className="text-[20px] sm:text-[25px] md:text-[30px] text-[#777]">At Tekmarts, we are passionate about revolutionizing e-commerce. Our smart,
-              environmentally friendly, and minimalist solutions are designed to help your business grow.</p>
-            <button className="text-[16px] sm:text-[20px] flex items-center gap-4 bg-[#fce765] hover:bg-[#ffe64a] transition p-3 px-4 mt-4 rounded-full font-semibold">Explore Our Journey <FaArrowRight /></button>
+            <h2 className="text-black text-[30px] md:text-[40px] font-bold py-3">About Tekmarts</h2>
+            <p className="text-[20px] sm:text-[25px] md:text-[30px] text-[#777]py-3"> A dual-platform solution offering an ERP system for seamless shipping management and a TikTok bot for influencer marketing. Users can ship products, connect with influencers, and automate outreach via AI for product promotion</p>
+            <button className="text-[16px] sm:text-[20px] flex items-center gap-4 bg-[#fce765] hover:bg-[#ffe64a] transition p-3 px-4 mt-4 rounded-full font-semibold cursor-default">Explore Our Journey <FaArrowRight /></button>
           </section>
           <span className="hidden lg:block">
             <img className="max-w-[110px] rotateIn relative" src="images/arrow-move.png" alt="arrow" />
@@ -49,17 +48,15 @@ export const Home = () => {
               <li className="flex gap-4 items-start">
                 <span className="mt-2 bg-black min-w-12 min-h-12 rounded-full text-white flex items-center justify-center"><FaLocationArrow className="w-5 h-5"/></span>
                 <span>
-                  <b className="text-black">Marketing Sales</b>
-                  <p className="text-[#777777]">At Tekmarts, we are passionate about revolutionizing
-                    e-commerce.</p>
+                  <b className="text-black">ERP System</b>
+                  <p className="text-[#777777]">Streamlines shipping, tracking, and delivery for sellers and shippers</p>
                 </span>
               </li>
               <li className="flex gap-4 items-start">
                 <span className="mt-2 bg-black min-w-12 min-h-12 rounded-full text-white flex items-center justify-center"><FaLocationArrow className="w-5 h-5"/></span>
                 <span>
-                  <b className="text-black">Marketing Sales</b>
-                  <p className="text-[#777777]">At Tekmarts, we are passionate about revolutionizing
-                    e-commerce.</p>
+                  <b className="text-black">TikTok Bot</b>
+                  <p className="text-[#777777]"> Connects users with influencers and automates outreach for promotions </p>
                 </span>
               </li>
             </ul>
@@ -70,19 +67,19 @@ export const Home = () => {
       <div className="w-full career pt-20 pb-60 lg:pb-80">
         <div className="max-w-[1460px] m-auto px-4">
           <section className="flex flex-col md:flex-row gap-4 text-center md:text-left justify-between items-center">
-            <div>
-            <h2 className="text-black text-[30px] md:text-[40px] font-bold">About Tekmarts</h2>
-              <p className="text-[20px] sm:text-[25px] md:text-[30px]  text-black font-semibold">At Tekmarts, we are passionate about revolutionizing e-commerce. Our smart,
-                environmentally friendly, and minimalist solutions are designed to help your business grow.</p>
+            <div className="text-center">
+            <h2 className="text-black text-[30px] md:text-[40px] font-bold py-2">Comprehensive Solutions for Your Business</h2>
+              <p className="text-[20px] sm:text-[25px] md:text-[30px]  text-black font-semibold">  We provide a range of services to enhance your operations, including multi-platform sales on TikTok, Amazon, and Temu, tailored B2B solutions for streamlined supply chains, efficient fulfillment and logistics for timely deliveries, and automated e-commerce software to optimize the sales process. Discover how we can support your business growth!</p>
             </div>
-            <button className="text-[16px] sm:text-[20px] min-w-auto sm:min-w-[300px] flex items-center gap-4 bg-white hover:bg-[#ffe64a] transition p-3 px-4 rounded-full font-semibold">Explore Our Journey <FaArrowRight /></button>
+        
           </section>
         </div>
       </div>
-      <div className="w-full bg-[#f5f5f5]" id="services">
-        <div className="max-w-[1460px] m-auto">
-          <div className="-top-[280px] relative">
-        <h2 className="text-black text-[30px] md:text-[40px] font-bold px-4 pt-8 lg:pt-0 pb-4 md:pb-6 lg:pb-8 text-center md:text-left" >Our Services</h2>
+      <div className="w-full bg-[#f5f5f5]"  >
+        <div className="max-w-[1460px] m-auto"  >
+          <div className="-top-[280px] relative" >
+      <p  id="services"></p>
+        <h2 className="text-black text-[30px] md:text-[40px] font-bold px-4 pt-8 lg:pt-0 pb-4 md:pb-6 lg:pb-8 text-center md:text-left" id="software-solutions">Our Services</h2>
           <ul className=" servicesSet flex flex-wrap gap-4 w-full px-4">
             <li className="relative top-0 hover:-top-[10px] shadow-md services bg-white hover:bg-[#4b4b4b] transition-[1s] rounded-xl p-6 py-10 flex flex-col gap-5 items-center text-center">
               <span className="transition bg-black w-[92px] h-[92px] rounded-full flex items-center justify-center"><img className="block transition" src="images/icons/sale-tag.png" alt="icons" /></span>
@@ -116,7 +113,7 @@ export const Home = () => {
         </div>
       </div>
       </div>
-      <div className="bg-white w-full py-20 -mt-[150px]">
+      <div className="bg-white w-full py-20 -mt-[150px]" id="products">
         <div className="max-w-[1460px] m-auto px-4">
           <section className="flex md:flex-row flex-col items-center justify-center md:justify-between gap-10 md:gap-20">
             <div className="flex gap-4 min-w-[270px]">
@@ -124,12 +121,12 @@ export const Home = () => {
               <span><img src="images/icons/tiktok.png" alt="icons" /></span>
               <span><img src="images/icons/pint.png" alt="icons" /></span>
             </div>
-            <div className="w-full flex flex-col items-center md:items-start text-center md:text-left">
+            <div className="w-full flex flex-col items-center md:items-start text-center md:text-left" >
               <h2 className="font-black text-[30px] lg:text-[50px] xl:text-[60px] flex gap-2 uppercase leading-none whitespace-nowrap">SELL ON</h2>
               <span className="text-[30px] md:text-[40px] text-[#666] font-semibold uppercase">Everywhere</span>
               <p className="text-[#777] text-[20px] md:text-[30px] my-4">Become the next online success
                 story — sell anything, anywhere, to anyone. Control everything from a single platform with centralized inventory, order management, and pricing.</p>
-              <button className="text-[16px] sm:text-[20px] flex items-center gap-4 bg-[#fce765] hover:bg-[#ffe64a] transition p-3 px-4 rounded-full font-semibold">Get Started to Know More <FaArrowRight /></button>
+              <button className="text-[16px] sm:text-[20px] flex items-center gap-4 bg-[#fce765] hover:bg-[#ffe64a] transition p-3 px-4 rounded-full font-semibold cursor-default">Get Started to Know More <FaArrowRight /></button>
             </div>
           </section>
         </div>
