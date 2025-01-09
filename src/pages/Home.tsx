@@ -14,7 +14,7 @@ export const Home = () => {
               <p className="text-[#777] text-[16px] sm:text-[25px] xl:text-[30px] my-4">Your one-stop solution for innovative e-commerce and retail success.</p>
               <button className="text-[16px] sm:text-[20px] flex items-center gap-4 bg-[#fce765] hover:bg-[#ffe64a] transition p-3 px-4 rounded-full font-semibold">Get Started to Know More <FaArrowRight /></button>
             </div>
-            <img className="mt-20 md:mt-0 w-[50%] sm:w-[30%] move relative" src="images/phone.png" />
+            <img className="mt-20 md:mt-0 w-[50%] sm:w-[30%] move relative" src="images/phone.png" alt="phone"/>
           </div>
         </section>
       </section>
@@ -32,10 +32,10 @@ export const Home = () => {
           </section>
         </div>
       </div>
-      <div className="w-full py-20">
+      <div className="w-full py-20" id="about-us">
         <div className="max-w-[1460px] m-auto px-4">
         <section className="flex flex-col lg:flex-row gap-12 sm:gap-8 justify-between items-center">
-          <section>
+          <section >
             <h2 className="text-black text-[30px] md:text-[40px] font-bold">About Tekmarts</h2>
             <p className="text-[20px] sm:text-[25px] md:text-[30px] text-[#777]">At Tekmarts, we are passionate about revolutionizing e-commerce. Our smart,
               environmentally friendly, and minimalist solutions are designed to help your business grow.</p>
@@ -79,10 +79,10 @@ export const Home = () => {
           </section>
         </div>
       </div>
-      <div className="w-full bg-[#f5f5f5]">
+      <div className="w-full bg-[#f5f5f5]" id="services">
         <div className="max-w-[1460px] m-auto">
           <div className="-top-[280px] relative">
-        <h2 className="text-black text-[30px] md:text-[40px] font-bold px-4 pt-8 lg:pt-0 pb-4 md:pb-6 lg:pb-8 text-center md:text-left">Our Services</h2>
+        <h2 className="text-black text-[30px] md:text-[40px] font-bold px-4 pt-8 lg:pt-0 pb-4 md:pb-6 lg:pb-8 text-center md:text-left" >Our Services</h2>
           <ul className=" servicesSet flex flex-wrap gap-4 w-full px-4">
             <li className="relative top-0 hover:-top-[10px] shadow-md services bg-white hover:bg-[#4b4b4b] transition-[1s] rounded-xl p-6 py-10 flex flex-col gap-5 items-center text-center">
               <span className="transition bg-black w-[92px] h-[92px] rounded-full flex items-center justify-center"><img className="block transition" src="images/icons/sale-tag.png" alt="icons" /></span>
@@ -95,11 +95,17 @@ export const Home = () => {
               <p className="text-[#777777]">Our tailored B2B services connect manufacturers, distributors, and retailers, simplifying bulk orders and streamlining supply chains for smoother
                 operations.</p>
             </li>
-            <li className="relative top-0 hover:-top-[10px] shadow-md services bg-white hover:bg-[#4b4b4b] transition-[1s] rounded-xl p-6 py-10 flex flex-col gap-5 items-center text-center">
+            <li >
+              <a  href="http://54.198.211.3/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="relative top-0 hover:-top-[10px] shadow-md services bg-white hover:bg-[#4b4b4b] transition-[1s] rounded-xl p-6 py-10 flex flex-col gap-5 items-center text-center"
+                  >
               <span className="transition bg-black w-[92px] h-[92px] rounded-full flex items-center justify-center"><img className="block transition" src="images/icons/logistics-delievry.png" alt="icons" /></span>
               <h3 className="text-black text-[22px] font-bold">Fulfillment & Logistics</h3>
               <p className="text-[#777777]">With our own warehouse and fulfillment center, we manage inventory and
                 deliveries, ensuring on-time shipments with high accuracy for both direct and bulk orders.</p>
+                </a>
             </li>
             <li className="relative top-0 hover:-top-[10px] shadow-md services bg-white hover:bg-[#4b4b4b] transition-[1s] rounded-xl p-6 py-10 flex flex-col gap-5 items-center text-center">
               <span className="transition bg-black w-[92px] h-[92px] rounded-full flex items-center justify-center"><img className="block transition" src="images/icons/cart.png" alt="icons" /></span>

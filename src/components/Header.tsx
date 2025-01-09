@@ -1,15 +1,28 @@
 import { useEffect, useState } from "react";
 import { RiMenuFold3Line } from "react-icons/ri";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export const Header = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [showMenu, setShowMenu] = useState(false);
+  const navigate = useNavigate();
   const handleScroll = () => {
     const newScrollYPosition = window.pageYOffset;
     setScrollPosition(newScrollYPosition);
   };
 
+  const scrollToSection = (id: string) => {
+    navigate('/');
+    setTimeout(() => {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      } else {
+        console.warn(`Element with id "${id}" not found.`);
+      }
+    }, 200);
+  };
+  
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -24,7 +37,7 @@ export const Header = () => {
     >
       <div className="max-w-[1460px] m-auto px-4">
         <div className="w-full flex items-center justify-between gap-4">
-          <a href="#">
+          <a href="/">
             <img
               className="max-w-[180px] block"
               src="images/logo.png"
@@ -39,31 +52,47 @@ export const Header = () => {
           <nav className={`navMobile ${showMenu && "navMobileActive"} flex gap-4 items-center`}>
             <span className="flex gap-4 xl:gap-8 items-center">
               <a
-                href=""
+                href="/"
                 className="font-semibold text-[16px] text-gray-500 hover:text-black transition"
               >
                 Home
               </a>
               <a
-                href=""
+                href="/"
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection("about-us");
+                }}
                 className="font-semibold text-[16px] text-gray-500 hover:text-black transition"
               >
                 About Us
               </a>
               <a
-                href=""
+                href="/"
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection("services");
+                }}
                 className="font-semibold text-[16px] text-gray-500 hover:text-black transition"
               >
                 Services
               </a>
               <a
-                href=""
+                href="/"
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection("products");
+                }}
                 className="font-semibold text-[16px] text-gray-500 hover:text-black transition"
               >
                 Products
               </a>
               <a
-                href=""
+                href="/"
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection("software-solutions");
+                }}
                 className="font-semibold text-[16px] text-gray-500 hover:text-black transition"
               >
                 Software Solutions
