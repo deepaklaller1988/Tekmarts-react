@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import { RiMenuFold3Line } from "react-icons/ri";
 import { Link, useNavigate } from "react-router-dom";
-
+import MiniLoader from "./MiniLoader";
 export const Header = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [showMenu, setShowMenu] = useState(false);
+  const [showPopup,setShowPopup]=useState(false)
   const navigate = useNavigate();
   const handleScroll = () => {
     const newScrollYPosition = window.pageYOffset;
@@ -106,13 +107,34 @@ export const Header = () => {
             </span>
             <span className="flex items-center gap-4">
               <div className="font-regular text-gray-500">|</div>
-              <button className="gradient text-[16px] rounded-full text-white transition py-1 px-4 whitespace-nowrap">
+              <button className="gradient text-[16px] rounded-full text-white transition py-1 px-4 whitespace-nowrap" onClick={()=>setShowPopup(true)} >
                 Tekmarts CAREERS
               </button>
             </span>
           </nav>
         </div>
       </div>
+
+      {showPopup && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex justify-center items-center z-50">
+          <div className="bg-white p-6 rounded-lg shadow-lg w-96">
+            <h2 className="text-2xl font-bold mb-4">Careers at Tekmarts</h2>
+            <p className="mb-4">
+       Sorry we are not hiring at this time 
+            </p>
+            <div className="flex gap-4">
+              <button
+                onClick={() => setShowPopup(false)}
+                className="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-gray-600 transition"
+              >
+                Close
+              </button>
+             
+            </div>
+          </div>
+        </div>
+      )}
+
     </div>
   );
 };
